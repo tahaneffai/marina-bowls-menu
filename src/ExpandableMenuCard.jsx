@@ -6,7 +6,8 @@ const ExpandableMenuCard = ({ category }) => {
 
   return (
     <motion.div
-      className="bg-gradient-to-br from-blue-800/80 to-cyan-700/80 backdrop-blur-sm rounded-2xl p-6 lg:p-8 shadow-2xl border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300"
+      onClick={() => setIsExpanded(!isExpanded)}
+      className="bg-gradient-to-br from-blue-800/80 to-cyan-700/80 backdrop-blur-sm rounded-2xl p-6 lg:p-8 shadow-2xl border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300 cursor-pointer hover:shadow-lg"
       whileHover={{ y: -5, scale: 1.02 }}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -23,7 +24,10 @@ const ExpandableMenuCard = ({ category }) => {
           </p>
         </div>
         <motion.button
-          onClick={() => setIsExpanded(!isExpanded)}
+          onClick={(e) => {
+            e.stopPropagation();
+            setIsExpanded(!isExpanded);
+          }}
           className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}

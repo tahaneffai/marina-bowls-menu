@@ -101,29 +101,17 @@ export const menu = {
       description: "Topped with a mix of fresh fruits"
     },
     {
-      title: "🥞 Caramel / Honey / Nutella Pancake",
+      title: "🥞 Caramel Pancake",
       price: "35DH",
-      description: "Choice of topping: caramel, honey, or Nutella"
-    },
-    {
-      title: "🍳 Omelette Nature",
-      price: "20DH",
-      description: "Simple 3-egg omelette"
-    },
-    {
-      title: "🍳 Omelette Fromage",
-      price: "25DH",
-      description: "Omelette with melted cheese"
-    },
-    {
-      title: "🍳 Omelette Fromage Dinde",
-      price: "30DH",
-      description: "Omelette with cheese and smoked turkey"
-    },
-    {
-      title: "🍳 2 Oeufs au Plat",
-      price: "22DH",
-      description: "Two fried eggs"
+      description: "Choice of topping: caramel"
+    },{
+      title: "🥞 Honey Pancake",
+      price: "35DH",
+      description: "Choice of topping: honey"
+    },{
+      title: "🥞 Nutella Pancake",
+      price: "35DH",
+      description: "Choice of topping: Nutella"
     },
     {
       title: "🍊 Jus Orange",
@@ -216,6 +204,26 @@ export const menu = {
         "Fresh orange juice",
         "Coffee with milk or tea, Mini-bowl"
       ]
+    },
+    {
+      title: "🍳 Omelette Nature",
+      price: "20DH",
+      description: "Simple 3-egg omelette"
+    },
+    {
+      title: "🍳 Omelette Fromage",
+      price: "25DH",
+      description: "Omelette with melted cheese"
+    },
+    {
+      title: "🍳 Omelette Fromage Dinde",
+      price: "30DH",
+      description: "Omelette with cheese and smoked turkey"
+    },
+    {
+      title: "🍳 2 Oeufs au Plat",
+      price: "22DH",
+      description: "Two fried eggs"
     }
   ],
   breakfastImage: "/images/breakfast.png"
