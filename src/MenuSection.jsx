@@ -40,7 +40,8 @@ const MenuSection = () => {
 
         {/* Menu Cards Container */}
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-12">
+            <ExpandableMenuCard category={{ name: 'Breakfast', items: menu.breakfast, image: menu.breakfastImage }} />
             <ExpandableMenuCard category={{ name: 'Poké Bowls', items: menu.pokebowls }} />
             <ExpandableMenuCard category={{ name: 'Desserts & Drinks', items: menu.dessertsAndDrinks }} />
           </div>

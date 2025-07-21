@@ -1,133 +1,222 @@
 export const menu = {
   pokebowls: [
     {
-      title: "🥣 Marina Chicken Rice",
+      title: "🥣 Pink Granola Bowl",
+      price: "65DH",
       content: [
-        "Base: Sushi rice",
+        "Strawberry yogurt",
+        "Granola",
+        "Fresh fruits"
+      ],
+      image: "/images/pink-granola.png"
+    },
+    {
+      title: "🥣 Natur Granola Bowl",
+      price: "55DH",
+      content: [
+        "Nature yogurt",
+        "Granola",
+        "Fresh fruits"
+      ],
+      image: "/images/natur-granola.png"
+    },
+    {
+      title: "🥣 Marina Chicken Bowl",
+      price: "95DH",
+      content: [
+        "Rice: Sushi rice",
         "Mix-ins: Cherry tomatoes, corn, mango, cucumber, onion",
         "Protein: Sweet chicken",
-        "Sauce: Sriracha mayo & ginger syrup",
+        "Sauce: Sriracha mayo",
         "Toppings: Crunchy onions"
-      ]
+      ],
+      image: "/images/marina-chicken.png"
     },
     {
       title: "🐟 Atlantic Bowl",
+      price: "100DH",
       content: [
-        "Base: Sushi rice",
+        "Rice: Sushi rice",
         "Mix-ins: Cherry tomatoes, avocado, mango, seaweed, onions",
         "Protein: Nordic salmon",
         "Sauce: Sriracha mayo",
         "Toppings: Crunchy onions, spring onions"
-      ]
+      ],
+      image: "/images/atlantic.png"
     },
     {
       title: "🔥 Ultra Me3elem Bowl",
+      price: "120DH",
       content: [
-        "Base: Sushi rice",
-        "Mix-ins: Cherry tomatoes, cucumber, seaweed, mango, edamame",
+        "Rice: Sushi rice",
+        "Mix-ins: Cherry tomatoes, cucumber, seaweed, mango, edamame, mango",
         "Protein: Raw salmon & sweet chicken",
         "Sauce: Sriracha mayo & ginger syrup",
         "Toppings: Crunchy onions"
-      ]
+      ],
+      image: "/images/me3elem.png"
     },
     {
       title: "🍃 Jumuha Bowl",
+      price: "95DH",
       content: [
-        "Base: Couscous rice",
-        "Mix-ins: Cucumber, avocado, bell pepper, cherry tomatoes, onions",
+        "Rice: Couscous rice",
+        "Mix-ins: Cucumber, avocado, paprika, cherry tomatoes, onions",
         "Protein: Chicken",
-        "Toppings: Caramelized onions & raisins, mint, coriander",
-        "Sauce: Ginger syrup"
-      ]
-    },
-    {
-      title: "🌀 Create Your Own Poké Bowl",
-      content: [
-        "Step 1 – Choose Your Base: White Rice, Brown Rice, Couscous",
-        "Step 2 – Pick 5 Mix-ins: Cherry Tomatoes, Corn, Mango, Avocado, Cucumber, Edamame, Carrots, Red Onion, Jalapeños, Seaweed Salad, Feta Cheese, Chili",
-        "Step 3 – Pick Your Protein: Sweet Chicken, Spicy Chicken, Nordic Salmon (+15DH per extra)",
-        "Step 4 – Pick Your Sauce: Sriracha Mayo, Ginger Syrup, Teriyaki, Nacho, Wasabi Mayo, Walnuts, Ponzu"
-      ]
+        "Sauce: Ginger syrup",
+        "Toppings: B'sal ou zwib, mint, coriander"
+      ],
+      image: "/images/jumuha.png"
     }
   ],
   dessertsAndDrinks: [
     {
-      title: "🍓 Sweets",
+      title: "🍵 Matcha with cocomilk",
+      price: "45DH",
+      description: "Matcha, coconut milk, served cold"
+    },
+    {
+      title: "🍵 Matcha with nature milk",
+      price: "42DH",
+      description: "Matcha with fresh milk, earthy and energizing"
+    },
+    {
+      title: "🍵 Matcha with Raibi",
+      price: "48DH",
+      description: "Matcha with Raibi (fermented milk), sweet fusion"
+    },
+    {
+      title: "🥞 Poke Pancake",
+      price: "52DH",
+      description: "Fluffy pancakes with seasonal toppings and cream"
+    },
+    {
+      title: "🥞 Nutella Banana Pancake",
+      price: "38DH",
+      description: "Pancake with Nutella and banana slices"
+    },
+    {
+      title: "🥞 Fresh Fruits Pancake",
+      price: "49DH",
+      description: "Topped with a mix of fresh fruits"
+    },
+    {
+      title: "🥞 Caramel / Honey / Nutella Pancake",
+      price: "35DH",
+      description: "Choice of topping: caramel, honey, or Nutella"
+    },
+    {
+      title: "🍳 Omelette Nature",
+      price: "20DH",
+      description: "Simple 3-egg omelette"
+    },
+    {
+      title: "🍳 Omelette Fromage",
+      price: "25DH",
+      description: "Omelette with melted cheese"
+    },
+    {
+      title: "🍳 Omelette Fromage Dinde",
+      price: "30DH",
+      description: "Omelette with cheese and smoked turkey"
+    },
+    {
+      title: "🍳 2 Oeufs au Plat",
+      price: "22DH",
+      description: "Two fried eggs"
+    },
+    {
+      title: "🍊 Jus Orange",
+      price: "26DH",
+      description: "100% fresh pressed orange juice"
+    },
+    {
+      title: "🍋 Jus Citron",
+      price: "25DH",
+      description: "Lemon juice with mint"
+    },
+    {
+      title: "🥤 Panaché",
+      price: "30DH",
+      description: "Fruit milkshake blend (banana, orange, milk)"
+    },
+    {
+      title: "🥤 Jus Pressé (Pomme – Ananas – Fraise)",
+      price: "30DH",
+      description: "Choose from apple, pineapple, or strawberry"
+    },
+    {
+      title: "🫖 Thé à la menthe",
+      price: "21DH",
+      description: "Traditional Moroccan mint tea"
+    },
+    {
+      title: "☕ Café noir",
+      price: "21DH",
+      description: "Black coffee"
+    },
+    {
+      title: "☕ Cappuccino",
+      price: "25DH",
+      description: "Creamy cappuccino with milk foam"
+    },
+    {
+      title: "🍹 Mojito Virgin Red",
+      price: "32DH",
+      description: "Strawberry, lime, mint, sparkling water"
+    },
+    {
+      title: "🍹 Mojito Virgin Green",
+      price: "32DH",
+      description: "Lime, mint, soda, sugar syrup"
+    },
+    {
+      title: "🍓 Spécialité Mixte Fruits",
+      price: "50DH",
+      description: "Seasonal fruits with topping of your choice"
+    }
+  ],
+  breakfast: [
+    {
+      title: "Marocain",
+      price: "60DH",
       content: [
-        "Pink Granola Bowl — Strawberry yogurt, granola, fresh fruits — 75DH",
-        "Matcha Latte — Matcha with strawberry syrup — 55DH"
+        "Traditional breads (msimen, harcha, baghrir)",
+        "Cheese, olives, amlou, honey, butter",
+        "Moroccan mint tea",
+        "Mini-bowl"
       ]
     },
     {
-      title: "🍳 Nos Petit Déjeuners",
+      title: "Fassi",
+      price: "50DH",
       content: [
-        "Marocain — 40DH",
-        "Fassi — 40DH",
-        "Espagnol — 45DH",
-        "Française — 40DH"
+        "Traditional khlii (dried spiced meat)",
+        "Scrambled eggs, harcha or baghrir",
+        "Olives, cheese, olive oil",
+        "Moroccan mint tea, Mini-bowl"
       ]
     },
     {
-      title: "🥞 Nos Crêpes Sucrées",
+      title: "Spanish",
+      price: "55DH",
       content: [
-        "Crêpe Caramel — 25DH",
-        "Crêpe Miel — 20DH",
-        "Crêpe Citron — 20DH",
-        "Crêpe Banane Caramel — 30DH",
-        "Crêpe Nutella — 25DH",
-        "Crêpe Nutella Banane — 30DH",
-        "Crêpe aux Fruits — 50DH"
+        "Spanish omelette (with peppers & onions)",
+        "Toast, grilled tomatoes, turkey ham",
+        "Fresh orange juice",
+        "Coffee or tea, Mini-bowl"
       ]
     },
     {
-      title: "🍳 Omelettes & Œufs",
+      title: "French",
+      price: "50DH",
       content: [
-        "Omelette Nature — 20DH",
-        "Omelette au Fromage — 25DH",
-        "Omelette Fromage Dinde — 30DH",
-        "Omelette La Torre — 35DH",
-        "1 Œuf au Plat — 15DH",
-        "2 Œufs au Plat — 22DH",
-        "3 Œufs au Plat — 30DH"
-      ]
-    },
-    {
-      title: "🍰 Nos Desserts",
-      content: [
-        "Spécialité Mixte Fruits — 50DH"
-      ]
-    },
-    {
-      title: "☕ Nos Boissons",
-      content: [
-        "Thé — 25DH",
-        "Café Noir — 25DH",
-        "Nespresso — 25DH",
-        "Café Crème — 25DH",
-        "Cappuccino — 25DH",
-        "Chocolat Chaud — 20DH",
-        "Sodas — 20DH",
-        "Eau Minérale — 15DH",
-        "Redbull — 30DH"
-      ]
-    },
-    {
-      title: "🍹 Nos Jus",
-      content: [
-        "Jus Orange",
-        "Jus Citron",
-        "Panaché Lait ou Orange",
-        "Jus Pressé (pomme – ananas – fraise)"
-      ]
-    },
-    {
-      title: "🍸 Nos Mojitos",
-      content: [
-        "Jumbo XL Mojito (Red ou Green)",
-        "Mojito Redbull",
-        "Mojito Virgin Red",
-        "Mojito Virgin Green"
+        "Croissant, pain au chocolat",
+        "Baguette with butter & jam",
+        "Fresh orange juice",
+        "Coffee with milk or tea, Mini-bowl"
       ]
     }
-  ]
+  ],
+  breakfastImage: "/images/breakfast.png"
 }; 

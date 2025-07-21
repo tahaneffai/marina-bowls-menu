@@ -60,6 +60,15 @@ const ExpandableMenuCard = ({ category }) => {
             className="overflow-hidden"
           >
             <div className="space-y-4 pt-4 border-t border-cyan-400/20">
+              {category.image && (
+                <div className="flex justify-center mb-4">
+                  <img
+                    src={category.image}
+                    alt={category.name}
+                    className="w-24 h-24 rounded-full shadow-xl border-4 border-cyan-400/30 bg-white/10 object-cover object-center"
+                  />
+                </div>
+              )}
               {category.items.map((item, index) => (
                 <motion.div
                   key={item.title ? `${item.title}-${index}` : index}
@@ -68,10 +77,27 @@ const ExpandableMenuCard = ({ category }) => {
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                   className="bg-gradient-to-r from-blue-700/50 to-cyan-600/50 rounded-xl p-4 lg:p-6 backdrop-blur-sm border border-cyan-400/10 hover:border-cyan-400/30 transition-all duration-300"
                 >
+                  {/* Item Image */}
+                  {item.image && (
+                    <div className="flex justify-center mb-4">
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="w-20 h-20 rounded-full shadow-lg border-2 border-cyan-400/30 bg-white/10 object-cover object-center"
+                      />
+                    </div>
+                  )}
                   <div className="mb-3">
-                    <h4 className="text-lg lg:text-xl font-semibold text-white mb-2">
-                      {item.title}
-                    </h4>
+                    <div className="flex items-center justify-between mb-2">
+                      <h4 className="text-lg lg:text-xl font-semibold text-white">
+                        {item.title}
+                      </h4>
+                      {item.price && (
+                        <span className="bg-gradient-to-r from-cyan-500/90 to-blue-600/90 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm lg:text-base font-bold shadow-lg border border-cyan-400/30 hover:border-cyan-400/60 transition-all duration-300">
+                          {item.price}
+                        </span>
+                      )}
+                    </div>
                   </div>
                   {/* Content/Ingredients */}
                   {item.content && (
